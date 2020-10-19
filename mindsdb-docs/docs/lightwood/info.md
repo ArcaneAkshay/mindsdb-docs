@@ -10,8 +10,7 @@ Lightwood was inspired on [Keras](https://keras.io/)+[Ludwig](https://github.com
 
 ## Installing Lightwood
 
-
-### On Linux, OSX, Windows and all other operating systems
+You can install Lightwood using `pip`:
 ```bash
 pip3 install lightwood
 ```
@@ -24,7 +23,7 @@ cd lightwood;
 pip install --no-cache-dir -e .
 ```
 
-**Please note that, depending on your os and python setup, you might want to use `pip` instead of `pip3`, so please try the commands with `pip` if the ones above fail**
+>Please note that, depending on your os and python setup, you might want to use `pip` instead of `pip3`.
 
 You need python 3.6 or higher.
 
@@ -32,6 +31,38 @@ Note on MacOS, you need to install libomp:
 
 ```bash
 brew install libomp
+```
+
+### Install using virtual environment
+
+We suggest you to install Lightwood on a virtual environment to avoid dependency issues. Make sure your Python version is >=3.6. To set up a virtual environment:
+
+#### Install on Windows
+
+Install the latest version of `pip`:
+
+```bash
+python -m pip install --upgrade pip
+pip --version
+```
+
+Activate your virtual environment and install lightwood:
+
+```bash
+py -m pip install --user virtualenv
+.\env\Scripts\activate
+pip install lightwood
+```
+>You can also use `python` instead of `py`
+
+#### Install on Linux or macOS 
+
+Before installing Lightwood in a virtual environment you need to first create and activate the `venv`:
+
+```bash
+python -m venv env
+source env/bin/activate
+pip install lightwood
 ```
 
 
